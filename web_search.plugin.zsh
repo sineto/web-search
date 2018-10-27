@@ -6,16 +6,10 @@ function web_search() {
   local open_cmd
   [[ "$OSTYPE" = linux* ]] && open_cmd='xdg-open'
 
-  typeset -A urls
-  urls=(
-    google
-    duckduckgo
-    bing
-    yahoo
-  )
+  pattern='(google|duckduckgo|bing|yahoo)'
 
   # check whether the search engine is supported
-  if [[ -z "$1" ]];
+  if [[ $1 =~ pattern ]];
   then
     echo "Search engine $1 not supported."
     return 1
