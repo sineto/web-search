@@ -42,7 +42,7 @@ function web_search() {
   done
 
   url="${url%?}" # remove the last '+'
-  nohup $open_cmd "$url"
+  nohup $open_cmd "$url" > /dev/null
   rm nohup.out
 }
 
