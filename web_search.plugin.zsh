@@ -15,7 +15,7 @@ function web_search() {
   )
 
   # check whether the search engine is supported
-  if [[ -z "$urls[$1]" ]];
+  if [[ -z "$1" ]];
   then
     echo "Search engine $1 not supported."
     return 1
@@ -42,8 +42,7 @@ function web_search() {
   done
 
   url="${url%?}" # remove the last '+'
-  nohup $open_cmd "$url" > /dev/null
-  rm nohup.out
+  nohup $open_cmd "$url" &> /dev/null
 }
 
 alias bing='web_search bing'
