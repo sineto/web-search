@@ -31,3 +31,9 @@ The results are the same for both ways.
 | `map`    | open result with Google Maps       |
 | `images` | open result with DuckDuckGo Images |
 | `ducky`  | open the first result              |
+
+## Special thanks
+[Saurabh Kumar](https://github.com/theskumar) for creating the plugin on which this one is based.
+
+## License
+[MIT License](LICENSE)
