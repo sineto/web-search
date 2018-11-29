@@ -33,7 +33,8 @@ The results are the same for both ways.
 | `ducky`  | open the first result              |
 
 ## Special thanks
-[Saurabh Kumar](https://github.com/theskumar) for creating the plugin on which this one is based.
+- [Saurabh Kumar](https://github.com/theskumar) for creating the plugin on which this one is based.
+- [Joe Block](https://github.com/unixorn) for contributing with [macOS support](https://github.com/sinetoami/web-search/commit/7acc6e1eee7cf1086190daf0d66fc3fe589ca975) for this plugin.
 
 ## License
 [MIT License](LICENSE)
