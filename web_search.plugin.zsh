@@ -5,6 +5,7 @@ function web_search() {
   # get the open command
   local open_cmd
   [[ "$OSTYPE" = linux* ]] && open_cmd='xdg-open'
+  [[ "$OSTYPE" = darwin* ]] && open_cmd='open'
 
   pattern='(google|duckduckgo|bing|yahoo|github|youtube)'
 
