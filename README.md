@@ -2,6 +2,17 @@ web-search plugin
 -----------------
 This plugin allow aliases for searching from terminal with some popular web search engines.
 
+## Installation
+
+```sh
+git clone https://github.com/sinetoami/web-search.git "$ZSH_CUSTOM/plugins/web-search"
+```
+And add the plugin to your .zshrc:
+
+```sh
+plugins=(... web-search)
+```
+
 ## Usage
 `web-search` plugin give to you alias for `web_search` command. You can use this for example:
 ```
