@@ -7,7 +7,7 @@ function web_search() {
   [[ "$OSTYPE" = linux* ]] && open_cmd='xdg-open'
   [[ "$OSTYPE" = darwin* ]] && open_cmd='open'
 
-  pattern='(google|duckduckgo|bing|yahoo|github|youtube)'
+  pattern='(google|duckduckgo|bing|yahoo|github|youtube|brave)'
 
   # check whether the search engine is supported
   if [[ $1 =~ pattern ]];
@@ -17,7 +17,7 @@ function web_search() {
   fi
 
   local url
-  [[ "$1" == 'yahoo' ]] && url="https://search.yahoo.com" || url="https://www.$1.com"
+  [[ "$1" == 'yahoo' || "$1" == 'brave' ]] && url="https://search.$1.com" || url="https://www.$1.com"
 
   # no keyword provided, simply open the search engine homepage
   if [[ $# -le 1 ]]; then
@@ -26,6 +26,7 @@ function web_search() {
   fi
 
   typeset -A search_syntax=(
+    brave      "/search?q="
     google     "/search?q="
     bing       "/search?q="
     github     "/search?q="
@@ -46,6 +47,7 @@ function web_search() {
   nohup $open_cmd "$url" &> /dev/null
 }
 
+alias bs='web_search brave'
 alias bing='web_search bing'
 alias google='web_search google'
 alias yahoo='web_search yahoo'
