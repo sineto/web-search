@@ -1,8 +1,8 @@
 web-search plugin
 -----------------
-This plugin allow aliases for searching from terminal with some popular web search engines.
+This plugin allows aliases for searching from terminal with some popular web search engines.
 
-## Installation
+## Installation
 
 ```sh
 git clone https://github.com/sinetoami/web-search.git "$ZSH_CUSTOM/plugins/web-search"
@@ -28,6 +28,7 @@ The results are the same for both ways.
 | alias     | engine                                      |
 | ---       | ---                                         |
 | `ddg`     | `https://www.duckduckgo.com/?q=`            |
+| `brave`   | `https://www.search.brave.com/?q=`          |
 | `google`  | `https://www.google.com/search?q=`          |
 | `yahoo`   | `https://search.yahoo.com/search?p=`        |
 | `github`  | `https://github.com/search?q=`              |
