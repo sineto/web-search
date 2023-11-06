@@ -28,7 +28,7 @@ The results are the same for both ways.
 | alias     | engine                                      |
 | ---       | ---                                         |
 | `ddg`     | `https://www.duckduckgo.com/?q=`            |
-| `bs`      | `https://www.search.brave.com/?q=`          |
+| `brave`   | `https://www.search.brave.com/?q=`          |
 | `google`  | `https://www.google.com/search?q=`          |
 | `yahoo`   | `https://search.yahoo.com/search?p=`        |
 | `github`  | `https://github.com/search?q=`              |

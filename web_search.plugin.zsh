@@ -47,7 +47,7 @@ function web_search() {
   nohup $open_cmd "$url" &> /dev/null
 }
 
-alias bs='web_search brave'
+alias brave='web_search brave'
 alias bing='web_search bing'
 alias google='web_search google'
 alias yahoo='web_search yahoo'
