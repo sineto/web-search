@@ -2,7 +2,7 @@ web-search plugin
 -----------------
 This plugin allows aliases for searching from terminal with some popular web search engines.
 
-## Installation
+## Installation
 
 ```sh
 git clone https://github.com/sinetoami/web-search.git "$ZSH_CUSTOM/plugins/web-search"
