@@ -1,6 +1,6 @@
 web-search plugin
 -----------------
-This plugin allow aliases for searching from terminal with some popular web search engines.
+This plugin allows aliases for searching from terminal with some popular web search engines.
 
 ## Installation
 
